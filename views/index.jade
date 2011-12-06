@@ -1,0 +1,11 @@
+.container
+    .menubar
+        a(href='#')= "Testing"
+        a(href='#')= "Testing"
+        a(href='#')= "Testing"
+    - each obj in blogs
+      h3=obj.heading
+      p=obj.content
+      .footer
+        p posted by: #{obj.posted_by} @ 12/15/1950 9pm
+
