@@ -1,0 +1,42 @@
+[
+    {
+        "heading": "Article #1",
+        "content": "Articles content here",
+        "posted_by": "jimbob"
+    },
+    {
+        "heading": "Fish noms",
+        "content": "I like to eat fish </not>",
+        "posted_by": "fish lover"
+    },
+    {
+        "heading": "JavaScript blog",
+        "content": "Javascript hoooooeee!",
+        "posted_by": "coffeemang"
+    },
+    {
+        "heading": "JavaScript blog",
+        "content": "Javascript hoooooeee!",
+        "posted_by": "coffeemang"
+    },
+    {
+        "heading": "JavaScript blog",
+        "content": "Javascript hoooooeee!",
+        "posted_by": "coffeemang"
+    },
+    {
+        "heading": "JavaScript blog",
+        "content": "Javascript hoooooeee!",
+        "posted_by": "coffeemang"
+    },
+    {
+        "heading": "JavaScript blog",
+        "content": "Javascript hoooooeee!",
+        "posted_by": "coffeemang"
+    },
+    {
+        "heading": "JavaScript blog",
+        "content": "Javascript hoooooeee!",
+        "posted_by": "coffeemang"
+    }
+]
