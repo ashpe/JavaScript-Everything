@@ -49,6 +49,22 @@ body {
 .blog .footer a {
   color: #222;
 }
+.blog input[type=submit] {
+  display: inline;
+}
+.blog input[type=text] {
+  display: block;
+  line-height: 1.7em;
+  width: 60%;
+  padding: 0.3em;
+  margin-bottom: 1em;
+}
+.blog textarea {
+  display: block;
+  line-height: 1.7em;
+  width: 60%;
+  padding: 0.3em;
+}
 .right-menubar {
   float: right;
   position: relative;

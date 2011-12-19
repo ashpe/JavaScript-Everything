@@ -18,11 +18,24 @@
         h2 archive
         a(href='#')="January 2012"
         a(href='#')="December 2011"
-    - each obj, category in blogs
-        each blog in obj
-           .blog
-               h1=blog.heading
-               p=blog.content
-               .footer
-                  p posted by: <a href='#'>#{blog.posted_by}</a> @ 12/15/1950 9pm (Category: <a href='#'>#{category}</a>)
+    .all-blogs
+        .blog
+           h2 Add post idea?
+           input(type='text', placeholder='heading')
+           textarea(placeholder='content')
+           p Category
+           select
+               option JavaScript
+               option Cheese
+           .footer
+              p to be posted by: <a href='#'>ashleyp</a>
+           input(type='submit', value='add post')
+           input(type='submit', value='preview')
+        - each obj, category in blogs
+            each blog in obj
+               .blog
+                   h1=blog.heading
+                   p=blog.content
+                   .footer
+                      p posted by: <a href='#'>#{blog.posted_by}</a> @ 12/15/1950 9pm (Category: <a href='#'>#{category}</a>)
 
