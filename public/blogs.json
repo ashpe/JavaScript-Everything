@@ -1,42 +1,21 @@
-[
-    {
-        "heading": "Article #1",
-        "content": "Articles content here",
-        "posted_by": "jimbob"
-    },
-    {
-        "heading": "Fish noms",
-        "content": "I like to eat fish </not>",
-        "posted_by": "fish lover"
-    },
-    {
-        "heading": "JavaScript blog",
-        "content": "Javascript hoooooeee!",
-        "posted_by": "coffeemang"
-    },
-    {
-        "heading": "JavaScript blog",
-        "content": "Javascript hoooooeee!",
-        "posted_by": "coffeemang"
-    },
-    {
-        "heading": "JavaScript blog",
-        "content": "Javascript hoooooeee!",
-        "posted_by": "coffeemang"
-    },
-    {
-        "heading": "JavaScript blog",
-        "content": "Javascript hoooooeee!",
-        "posted_by": "coffeemang"
-    },
-    {
-        "heading": "JavaScript blog",
-        "content": "Javascript hoooooeee!",
-        "posted_by": "coffeemang"
-    },
-    {
-        "heading": "JavaScript blog",
-        "content": "Javascript hoooooeee!",
-        "posted_by": "coffeemang"
-    }
-]
+{
+   "JavaScript":[
+      {
+         "heading":"JavaScript blog",
+         "content":"Javascript #2",
+         "posted_by":"ashleyp"
+      },
+      {
+         "heading":"Intro",
+         "content":"JavaScript #1",
+         "posted_by":"ashleyp"
+      }
+   ],
+   "Cheese":[
+      {
+         "heading":"Cheese blog",
+         "content":"Not related to JavaScript",
+         "posted_by":"cheesemeister"
+      }
+   ]
+}
