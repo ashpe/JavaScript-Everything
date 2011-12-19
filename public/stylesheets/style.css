@@ -46,8 +46,8 @@ body {
   color: #2554C7;
   font-size: 2.0em;
 }
-.blog.footer {
-  padding: 0;
+.blog .footer a {
+  color: #222;
 }
 .right-menubar {
   float: right;
