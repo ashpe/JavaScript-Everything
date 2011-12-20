@@ -84,9 +84,6 @@ body {
   display: block;
   padding-left:1em;
 }
-a {
-  color: #00B7FF;
-}
 .footer p {
   font-size: 0.9em;
   padding: 0.3em;
@@ -102,11 +99,21 @@ a {
   z-index: 1000;
 }
 .menubar a {
+  color: #00B7FF;
   text-decoration: initial;
   width: 100px;
   font-size: 20px;
   padding: 0 0.6em 0px 0.6em;
   line-height: 1.5;
+}
+.menubar p {
+  display: inline;
+  color: #00B7FF;
+  text-decoration: initial;
+  width: 100px;
+  font-size: 1.2em;
+  line-height: 2.2em;
+  padding: 0 0.6em 0px 0.6em;
 }
 .menubar a:hover, .right-menubar a:hover {
   text-decoration: underline;

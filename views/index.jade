@@ -8,10 +8,26 @@
             a(href='#')= "twitter"
             a(href='#')= "contact"
         .login
-            input(type='text', placeholder='username')
-            input(type='password', placeholder='password')
-            input(type='submit', value='login')
+            - if (session.username)
+              p logged in as #{session.username} 
+            - else
+              form(action='/login', method='post')
+                  input(type='text', name='username', placeholder='username')
+                  input(type='password', name='password', placeholder='password')
+                  input(type='submit', value='login')
     .right-menubar
+        - if (session.username && session.user_level < 4)
+          h2 account
+          a(href='#')="update details"
+          a(href='#')="change password"
+          a(href='/logout')="logout"
+        - else
+          h2 admin 
+          a(href='#')="create new post"
+          a(href='#')="ban user"
+          a(href='#')="update details"
+          a(href='#')="change password"
+          a(href='/logout')="logout"
         h2 tags
         a(href='#')="cheese"
         a(href='#')="javascript"
