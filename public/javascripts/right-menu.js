@@ -12,7 +12,7 @@ $(document).ready(function($) {
         });
         request.done(function(categories) {
             $('.all-blogs').prepend("<div class='add-blog'></div>");
-            $('.add-blog').load("add_new_post.html", function() {
+            $('.add-blog').load("/add_new_post.html", function() {
                 for (var category in categories) {
                     $('#categories').append('<option>'+categories[category]+'</option>');
                 }

@@ -1,6 +1,11 @@
 {
     "JavaScript": [
         {
+            "heading": "Cheese blogs",
+            "content": "are silly",
+            "posted_by": "ashleyp"
+        },
+        {
             "heading": "Hello Lyny",
             "content": "I can add posts to my thingy now, yay!",
             "posted_by": "ashleyp"
@@ -22,6 +27,16 @@
         }
     ],
     "Cheese": [
+        {
+            "heading": "Devondale cream cheese",
+            "content": "Eww I hate it",
+            "posted_by": "estrial"
+        },
+        {
+            "heading": "I love cheese",
+            "content": "In mah belly",
+            "posted_by": "estrial"
+        },
         {
             "heading": "Hello I'm Lyny",
             "content": "I can make posts now coz i has access and stuffs. Yay cheese.",
