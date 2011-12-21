@@ -41,9 +41,12 @@ app.configure('production', function(){
 // Get
 app.get('/', routes.index);
 app.get('/logout', routes.logout);
+app.get('/category/:category?', routes.category);
 
 // Post
 app.post('/login', routes.login);
+app.post('/get_all_categories', routes.get_all_categories);
+app.post('/add_post', routes.add_post);
 
 var port = process.env.PORT || 3000;
 

@@ -16,42 +16,27 @@
                   input(type='password', name='password', placeholder='password')
                   input(type='submit', value='login')
     .right-menubar
-        - if (session.username && session.user_level < 4)
-          h2 account
-          a(href='#')="update details"
-          a(href='#')="change password"
-          a(href='/logout')="logout"
-        - else
-          h2 admin 
-          a(href='#')="create new post"
-          a(href='#')="ban user"
-          a(href='#')="update details"
-          a(href='#')="change password"
-          a(href='/logout')="logout"
-        h2 tags
-        a(href='#')="cheese"
-        a(href='#')="javascript"
-        h2 archive
-        a(href='#')="January 2012"
-        a(href='#')="December 2011"
+        - if (session.username && session.user_level > 2)
+          h2 admin
+          a(href='#')="view banlist"
+          a(href='#')="view userlist"
+        h2 account
+        - if (session.username && session.user_level > 1)
+          a(href='#',id="newpost")="create new post"
+        a(href='#')="update details"
+        a(href='#')="change password"
+        a(href='/logout')="logout"
+        h2 category
+        - each filter in categories
+            a(href='/category/'+filter)=filter
+        h2 posted by
+        a(href='#')="ashleyp"
+        a(href='#')="estrial"
     .all-blogs
-        .blog
-           h2 Add new blog post
-           input(type='text', placeholder='heading')
-           textarea(placeholder='content')
-           p Category
-           select
-               option JavaScript
-               option Cheese
-           .footer
-              p to be posted by: <a href='#'>ashleyp</a>
-           input(type='submit', value='add post')
-           input(type='submit', value='preview')
-        - each obj, category in blogs
-            each blog in obj
-               .blog
-                   h1=blog.heading
-                   p=blog.content
-                   .footer
-                      p posted by: <a href='#'>#{blog.posted_by}</a> @ 12/15/1950 9pm (Category: <a href='#'>#{category}</a>)
+        - each blog in blogs
+           .blog
+               h1=blog.heading
+               p=blog.content
+               .footer
+                  p posted by: <a href='#'>#{blog.posted_by}</a> @ 12/15/1950 9pm (Category: <a href='#'>#{category}</a>)
 
