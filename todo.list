@@ -1,0 +1,28 @@
+High Priority;
+
+Create filter-like sidebar, swapping between categorys / or posted by certain users.
+Add default posted by OR category to sqlite database. (Not both.)
+
+Start with default category, then think about easiest way to do default user.
+
+Step 1.
+
+Create user account logins with admin and moderator user level.
+
+Admin (4): Add posts, delete comments, delete posts etc.
+Moderator (3): Delete comments, post comments, add posts.
+Contributer (2): add posts, post comments.
+Normal user (1): Add comments
+
+// Done.
+
+Step 2.
+
+Popup dialog box to create a new category. Simple string and check it dosn't already exist before creating.
+
+Step 3.
+
+Create the ability to add a blog post. Make it so it creates a blog class object, with textfields instead of the heading/content. Make user type this in, validate and have a Save button ajax request which will refresh the page and show post as a new post.
+
+// Done
+

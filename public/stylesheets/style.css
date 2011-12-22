@@ -1,0 +1,120 @@
+body {
+  background-color: white;
+  padding-top: 3.0em;
+  font-family: Georgia, Tahoma, Helvetica, "sans-serif";
+  font-size: 0.75em;
+  margin-bottom:5.0em;;
+}
+.container {
+  background-color: white;
+  padding: 0 2.5em 1em;
+  width: 78%;
+}
+.items {
+  position: fixed;
+  right: 500px;
+  top: 0px;
+}
+.login {
+  position: fixed;
+  right: 6em;
+  top: 0px;
+  padding: 0.2em;
+}
+.login input {
+  background-color: #222;
+  color: white;
+  font-family: Georgia, Tahoma, Helvetica, "sans-serif";
+  border-color: #00B7FF;
+  line-height: 1.7em;
+  border-radius:5px;
+}
+.blog {
+  border:2px solid;
+  border-radius:5px;
+  -moz-border-radius:5px;
+  padding: 0.5em;
+  margin: 1em;
+  box-shadow: 0.4em 0.4em 0.2em #222;
+  padding-bottom: 1em;
+}
+.blog p {
+  color: #222;
+  font-size: 1.25em;
+}
+.blog h1 {
+  color: #2554C7;
+  font-size: 2.0em;
+}
+.blog .footer a {
+  color: #222;
+}
+.blog input[type=submit] {
+  display: inline;
+}
+.blog input[type=text] {
+  display: block;
+  line-height: 1.7em;
+  width: 60%;
+  padding: 0.3em;
+  margin-bottom: 1em;
+}
+.blog textarea {
+  display: block;
+  line-height: 1.7em;
+  width: 60%;
+  padding: 0.3em;
+}
+.right-menubar {
+  float: right;
+  position: relative;
+  left: 25%;
+  width: 24%;
+  padding: 0.5em;
+  height: 500px;
+  padding-bottom: 3em;
+}
+.right-menubar h2 {
+  color: #2554C7;
+}
+.right-menubar a {
+  color: #222;
+  text-decoration: none;
+  font-size: 1.25em;
+  display: block;
+  padding-left:1em;
+}
+.footer p {
+  font-size: 0.9em;
+  padding: 0.3em;
+  color: #2554C7;
+}
+.menubar {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background: #222222;
+  width: 100%;
+  height: 3.0em;
+  z-index: 1000;
+}
+.menubar a {
+  color: #00B7FF;
+  text-decoration: initial;
+  width: 100px;
+  font-size: 20px;
+  padding: 0 0.6em 0px 0.6em;
+  line-height: 1.5;
+}
+.menubar p {
+  display: inline;
+  color: #00B7FF;
+  text-decoration: initial;
+  width: 100px;
+  font-size: 1.2em;
+  line-height: 2.2em;
+  padding: 0 0.6em 0px 0.6em;
+}
+.menubar a:hover, .right-menubar a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,42 @@
+.container
+    .menubar
+        a(href='#', style='text-decoration: none')= "ashleyp: "+title
+        .items
+            a(href='#')= "categories"
+            a(href='#')= "about"
+            a(href='#')= "github"
+            a(href='#')= "twitter"
+            a(href='#')= "contact"
+        .login
+            - if (session.username)
+              p logged in as #{session.username} 
+            - else
+              form(action='/login', method='post')
+                  input(type='text', name='username', placeholder='username')
+                  input(type='password', name='password', placeholder='password')
+                  input(type='submit', value='login')
+    .right-menubar
+        - if (session.username && session.user_level > 2)
+          h2 admin
+          a(href='#')="view banlist"
+          a(href='#')="view userlist"
+        h2 account
+        - if (session.username && session.user_level > 1)
+          a(href='#',id="newpost")="create new post"
+        a(href='#')="update details"
+        a(href='#')="change password"
+        a(href='/logout')="logout"
+        h2 category
+        - each filter in categories
+            a(href='/category/'+filter)=filter
+        h2 posted by
+        a(href='#')="ashleyp"
+        a(href='#')="estrial"
+    .all-blogs
+        - each blog in blogs
+           .blog
+               h1=blog.heading
+               p=blog.content
+               .footer
+                  p posted by: <a href='#'>#{blog.posted_by}</a> @ 12/15/1950 9pm (Category: <a href='#'>#{category}</a>)
+

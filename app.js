@@ -1,3 +1,4 @@
+
 /**
  * Module dependencies.
  */
@@ -47,7 +48,7 @@ app.post('/login', routes.login);
 app.post('/get_all_categories', routes.get_all_categories);
 app.post('/add_post', routes.add_post);
 
-var port = process.env.PORT || 13154;
+var port = process.env.PORT || 3000;
 
 app.listen(port);
 console.log("Express server listening on port %d in %s mode", app.address().port, app.settings.env);
