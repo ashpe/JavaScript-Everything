@@ -37,7 +37,7 @@ exports.logout = function(req, res) {
 exports.category = function(req, res) {
   var fs        = require('fs');
   var category  = req.params.category;
-  fs.readFile('public/blogs.json', function(err, data) {
+  fs.readFile('/blogs/blogs.json', function(err, data) {
       if (err) throw err;
       var blogs = JSON.parse(data);
       res.render('index', { title: 'index', "blogs": blogs[category], "category": category, "categories": utility.getKeys(blogs) } )
@@ -55,7 +55,7 @@ exports.add_post = function(req, res) {
     var category = req.body.category;
     var fs       = require('fs');
     
-    fs.readFile('public/blogs.json', function(err,data) {
+    fs.readFile('/blogs/blogs.json', function(err,data) {
         if (err) throw err;
         var blogs = JSON.parse(data);
         var new_blog = { 
@@ -64,7 +64,7 @@ exports.add_post = function(req, res) {
           "posted_by": req.session.username,
         };
         blogs[category].unshift(new_blog);
-        fs.writeFile('public/blogs.json', JSON.stringify(blogs, null, 4), function(err) {
+        fs.writeFile('/blogs/blogs.json', JSON.stringify(blogs, null, 4), function(err) {
             if (err) throw err;
             res.redirect('/');
         });
@@ -78,7 +78,7 @@ exports.add_post = function(req, res) {
  
 exports.get_all_categories = function(req, res) {
     var fs        = require('fs');
-    fs.readFile('public/blogs.json', function(err, data) {
+    fs.readFile('/blogs/blogs.json', function(err, data) {
       if (err) throw err;
       res.send(utility.getKeys(JSON.parse(data)));
     });
